@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "OpenAIResponse";
+}
+
+<h1>OpenAIResponse</h1>
+
+@if (ViewBag.GeneratedText != null)
+{
+    <h2>Üretilen Metin:</h2>
+    <p>@ViewBag.GeneratedText</p>
+}
+else if (ViewBag.Error != null)
+{
+    <h2>Hata:</h2>
+    <p>@ViewBag.Error</p>
+    <p>@ViewBag.ErrorMessage</p>
+}
+
